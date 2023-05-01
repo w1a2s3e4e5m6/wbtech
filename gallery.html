@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* * {box-sizing: border-box;} */
+
+</style>
+<link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+  <header class="header"> <a href="#" class="logo">Portfolio.</a>
+    <nav class="navbar">
+            <a href="#" class="active">home</a>
+            <a href="#">about</a>
+            <a href="#">gallery</a>
+            <a href="#">Service</a>
+            <a href="#">contact </a>
+                   
+    </nav>
+</header>
+<header>
+    <div class="logo">
+<h2 >Gallery <br> Automatic Slideshow</h2><br>
+
+<!-- 
+<p>Change image every 2 seconds:</p> -->
+</div>
+
+<!-- <h3>Automatic Slideshow</h3>
+<p>Change image every 2 seconds:</p> -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="./2.jpg" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="./3.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="./5.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="./2.jpg" style="width:100%">
+    <div class="text">Caption Four</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 5 / 5</div>
+    <img src="./6.jpg" style="width:100%">
+    <div class="text">Caption Five</div>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script></header>
+
+</body>
+</html> 

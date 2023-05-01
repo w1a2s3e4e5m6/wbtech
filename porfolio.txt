@@ -1,0 +1,6 @@
+boxicons --- usage   ----- usage as a font  ------    import the CSS   ---  link copy and past in head 
+
+boxicons  ---  search facebook -- font link copy and past "#">
+               search twiter -- font link copy and past "#">
+               search instagram -- font link copy and past "#">
+               search linked in -- font link copy and past "#"> 
